@@ -26,5 +26,18 @@ $ docker logs -f aspnetrun-redis
 # Remove a specific image:
 # docker rmi <image id>
 
+# List all running containers
+$ docker ps -aq
+
+# Stop all running containers
+$ docker stop $(docker ps -aq)
+
+# Remove all running containers
+$ docker rm $(docker ps -aq)
+
+$ docker rmi $(docker images -q)
+
+
+
 
 

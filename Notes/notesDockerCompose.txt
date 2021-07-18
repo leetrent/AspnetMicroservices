@@ -7,6 +7,7 @@ $ docker stop <container id>
 # Execute docker compose file
 ###########################################################################
 $ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
+$ docker-compose -f docker-compose.yml -f docker-compose.override.yml down
 
 ########################################
 # Test Catolog.API
